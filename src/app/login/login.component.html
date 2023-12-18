@@ -1,0 +1,20 @@
+
+
+
+    <div class="container">
+          <!-- <a [href]="facebookUrl">Visit us on Social Media</a> -->
+          <a [href]="getSocialMediaLink()">Visit us on Social Media</a> <br>
+
+          <a href="{{getSocialMediaLink()}}">Visit us on Social Media</a>
+ 
+    </div>
+
+    <div class="container">
+           <span>Date using property : {{today}}</span>  <br>
+           <span>Date using method : {{ getCurrentDate()}}</span> <br>
+           <span>You have accessed this page : {{accessCount}} times today..</span>
+           <h1 class="text-primary">{{title}}</h1>
+
+           <button type="button" class="btn btn-secondary" [disabled]="isDisabled">Login</button> <br>
+           <!-- <button type="button" class="btn btn-secondary" disabled="{{isDisabled}}">Login</button> -->
+    </div>
