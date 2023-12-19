@@ -18,3 +18,10 @@
            <button type="button" class="btn btn-secondary" [disabled]="isDisabled">Login</button> <br>
            <!-- <button type="button" class="btn btn-secondary" disabled="{{isDisabled}}">Login</button> -->
     </div>
+
+    <br>
+
+   <div class="container">
+      <p> Current Email :  {{email}} </p>
+      <button type="button" class="btn btn-warning"   (click)="updateEmail('demo@outlook.com')">Update Email</button>
+   </div>
