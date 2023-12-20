@@ -25,3 +25,26 @@
       <p> Current Email :  {{email}} </p>
       <button type="button" class="btn btn-warning"   (click)="updateEmail('demo@outlook.com')">Update Email</button>
    </div>
+
+   <br>
+   <div class="container">
+       <form action="" class="form">
+           <div>
+              <label for="updateAddress">Update Address</label>
+              <input type="text" name="address" [(ngModel)]="address" placeholder=""/>
+              <span *ngIf="address.length < 6" class="text-danger">Invalid Address</span> 
+
+               <p>Address has been changed to : {{address}}</p>
+           </div>
+       </form>
+   </div>
+
+
+   <div class="container">
+       <h3>Pipes Demo</h3>
+       Current Date : <span>{{today | date:'MM/dd/yyyy'}} </span>   <br>
+       Username : <span>{{username | titlecase}} </span> <br>
+       <!-- Balance : <span>{{balance | currency}} </span> <br> -->
+       Balance : <span>{{balance | currency:'INR'}} </span> <br>
+       Profile Completion : <span>{{profileComplPercent | percent}} </span> <br>
+   </div>

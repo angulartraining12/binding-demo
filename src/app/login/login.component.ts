@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+      username : string = "tony blair";
       today : Date = new Date();
+      balance : number = 20000;
       title : string = "Login";
       accessCount : number = 2;
       imgUrl : string = "https://wallpapers.com/wallpapers/bus-in-sky-animated-cartoon-jrugczle7lyo4zia.html";
@@ -15,6 +17,8 @@ export class LoginComponent {
       isDisabled : boolean = false;
       isFaceBookAcctAvailble : boolean = false;
       email : string = "abc@gmail.com";
+      address:string="Hyderabad";
+      profileComplPercent : number = 0.8;
 
 
        getCurrentDate() : Date {
